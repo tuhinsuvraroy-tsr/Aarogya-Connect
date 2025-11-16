@@ -1,0 +1,223 @@
+body{
+    background-color: white;
+    width:100vh;
+    height:100vh;
+    /* background-image: linear-gradient(to bottom right, rgb(124, 123, 123), rgb(255, 255, 255)); */
+    background-size: 3000px 3000px;
+
+}
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.877);
+    height: 60px;
+    width: 600px;
+    position: fixed;
+    top:20px;
+    border-radius: 50px;
+    justify-content: space-around;
+    left:460px;
+    z-index: 10;
+
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+
+#login{
+    position:absolute;
+    top:40px;
+    left:1400px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(198, 33, 33);
+    border-radius: 50px;
+    height:30px;
+    width:80px;
+    border:0px;
+}
+#parentpins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+#pins{
+    position:absolute;
+    top:210px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 600px;
+    width: 1400px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px grey;
+}
+#pinsimg{
+    height:600px;
+    width:1400px;
+    border-radius: 50px;
+}
+#parenttextpins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width:100vw;
+    background-image: url(istockphoto-2129928358-612x612.jpg);
+    background-size: 1400px 600px;
+    border-radius: 50px;
+
+}
+#textpins{
+    position: absolute;
+}
+#parenttextpins{
+    font-family: "Story Script", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+#parenthelp{
+    
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+
+    
+}
+#help{
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top:5px; 
+    
+}
+
+#bookdoctor{
+    background-color: white;
+    width:700px;
+    height:500px;
+    position:absolute;
+    top:1000px;
+    left:50px;
+    border-radius: 50px;
+    background-image: url(360_F_550577266_IefwkUpaQ5ysSzgiPLY3770Gouig6A0V.jpg);
+    background-size: 50vw 500px;
+    box-shadow: 10px 10px 10px grey;
+    
+}
+#parentcwd{
+    width:700px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#cwd{
+    font-size: 90px;
+    position: absolute;
+    font-family: "Story Script", sans-serif;
+    color: rgb(18, 108, 108);
+
+}
+#purmed{
+    background-color: white;
+    width:700px;
+    height:500px;
+    position:absolute;
+    top:1000px;
+    left:780px;
+    border-radius: 50px;
+    background-image: url(premium_photo-1671721439617-491242a0507f.jpeg);
+    background-size: 700px 600px;
+}
+#parentbym{
+    width:700px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px grey;
+}
+#bym{
+    font-size: 90px;
+    position: absolute;
+    font-family: "Story Script", sans-serif;
+    color: rgb(255, 255, 255);
+}
+#pmh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+}
+#mh{
+    position:absolute;
+    top:1700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 600px;
+    width: 1400px;
+    border-radius: 50px;
+    background-image: url(maintaining-mental-health-winter-900x600.jpg);
+    background-size: 1400px 700px;
+    box-shadow: 10px 10px 10px grey;
+}
+#pmhs{
+    width:7000px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mhs{
+    font-size: 150px;
+    position: absolute;
+    font-family: "Story Script", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#footer{
+    width: 100vw;
+    height:500px;
+    background-color: black;
+    position: absolute;
+    top:2400px;
+    margin:0px;
+    padding:0px;
+}
