@@ -18,6 +18,12 @@ body{
   font-style: normal;
 }
 
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #navflex{
     display: flex;
     justify-content: center;
@@ -71,7 +77,7 @@ a{
     height: 600px;
     width: 1400px;
     border-radius: 50px;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px rgb(60, 22, 249);
 }
 #pinsimg{
     height:600px;
@@ -84,16 +90,17 @@ a{
     align-items: center;
     z-index: 3;
     width:100vw;
-    background-image: url(istockphoto-2129928358-612x612.jpg);
+    background-image: url(wmremove-transformed1.jpeg);
     background-size: 1400px 600px;
     border-radius: 50px;
 
 }
 #textpins{
     position: absolute;
+    top:210px;
 }
 #parenttextpins{
-    font-family: "Story Script", sans-serif;
+    font-family: "Bodoni Moda SC", sans-serif;
     font-size: 50px;
     color: rgb(255, 255, 255);
 }
@@ -133,7 +140,7 @@ a{
     border-radius: 50px;
     background-image: url(360_F_550577266_IefwkUpaQ5ysSzgiPLY3770Gouig6A0V.jpg);
     background-size: 50vw 500px;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px rgb(28, 148, 146);
     
 }
 #parentcwd{
@@ -146,9 +153,9 @@ a{
 
 }
 #cwd{
-    font-size: 90px;
+    font-size: 60px;
     position: absolute;
-    font-family: "Story Script", sans-serif;
+    font-family: "Bodoni Moda SC", sans-serif;
     color: rgb(18, 108, 108);
 
 }
@@ -171,12 +178,12 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px rgb(220, 68, 205);
 }
 #bym{
-    font-size: 90px;
+    font-size: 60px;
     position: absolute;
-    font-family: "Story Script", sans-serif;
+    font-family: "Bodoni Moda SC", sans-serif;
     color: rgb(255, 255, 255);
 }
 #pmh{
@@ -195,7 +202,7 @@ a{
     border-radius: 50px;
     background-image: url(maintaining-mental-health-winter-900x600.jpg);
     background-size: 1400px 700px;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 10px 10px 10px rgb(105, 28, 75);
 }
 #pmhs{
     width:7000px;
