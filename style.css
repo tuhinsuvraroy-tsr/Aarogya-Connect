@@ -109,13 +109,18 @@ a{
     position: fixed;
     bottom: 40px;
     right: 40px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     z-index: 10;
+    /* background: radial-gradient(circle at 70px 70px, #fff, #888); */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    /* filter: blur(1px); */
+    border-radius: 50px;
+
 
     
 }
@@ -126,8 +131,21 @@ a{
     background-color: white;
     text-align: center;
     position: absolute;
-    top:5px; 
-    
+    top:5px;    
+}
+
+#thelp{
+    position: absolute;
+    z-index:11;
+    font-size: 1000px;
+    color:black
+}
+#helpimg{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:40px;
+    height:40px;
 }
 
 #bookdoctor{
