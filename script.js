@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Menu Toggle
+    
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-links li');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         
-        // Animate links
+        
         links.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Hamburger animation
+       
         hamburger.classList.toggle('toggle');
     });
 
-    // Close mobile menu when clicking a link
+    
     links.forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth Scrolling for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Login Button Interaction
+   
     const loginBtn = document.getElementById('loginBtn');
     loginBtn.addEventListener('click', () => {
         alert('Login/Signup modal would open here!');
     });
 
-    // Service Buttons Interaction
+
     const serviceBtns = document.querySelectorAll('.btn-text');
     serviceBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Animation (Intersection Observer)
+ 
     const observerOptions = {
         threshold: 0.1
     };

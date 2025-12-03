@@ -136,7 +136,7 @@ ul {
     cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
     padding: 180px 0 120px;
     background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
@@ -470,11 +470,11 @@ ul {
     }
 }
 
-/* Why Choose Us Section */
+
 .why-choose-us {
     padding: 100px 0;
     background-color: #f0fdfa;
-    /* Light teal background */
+    
 }
 
 .features-grid {
@@ -513,7 +513,7 @@ ul {
     color: var(--light-text);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .header {
         padding: 1rem 0;
@@ -543,7 +543,7 @@ ul {
 
     .auth-buttons {
         display: none;
-        /* Can be moved inside nav-links for mobile if needed */
+        
     }
 
     .hero-content {
