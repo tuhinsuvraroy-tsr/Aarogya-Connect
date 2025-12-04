@@ -41,9 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
     const loginBtn = document.getElementById('loginBtn');
-    loginBtn.addEventListener('click', () => {
-        alert('Login/Signup modal would open here!');
-    });
+    if (loginBtn) {
+        loginBtn.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    }
 
 
     const serviceBtns = document.querySelectorAll('.btn-text');
