@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-links li');
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        
-        
+
+
         links.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-       
+
         hamburger.classList.toggle('toggle');
     });
 
-    
+
     links.forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-   
+
     const loginBtn = document.getElementById('loginBtn');
     if (loginBtn) {
         loginBtn.addEventListener('click', () => {
@@ -52,11 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
     serviceBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             const serviceName = e.target.closest('.service-card').querySelector('h3').innerText;
-            alert(`Booking feature for ${serviceName} coming soon!`);
+            if (serviceName === 'Insurance Booking') {
+                window.location.href = 'insurance.html';
+            } else {
+                alert(`Booking feature for ${serviceName} coming soon!`);
+            }
         });
     });
 
- 
+
     const observerOptions = {
         threshold: 0.1
     };
