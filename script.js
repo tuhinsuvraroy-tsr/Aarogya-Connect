@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const serviceName = e.target.closest('.service-card').querySelector('h3').innerText;
             if (serviceName === 'Insurance Booking') {
                 window.location.href = 'insurance.html';
+            } else if (serviceName === 'Doctor Consultation') {
+                window.location.href = 'consultation.html';
             } else {
                 alert(`Booking feature for ${serviceName} coming soon!`);
             }

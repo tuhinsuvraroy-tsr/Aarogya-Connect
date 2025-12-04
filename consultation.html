@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consultation - Arogya-Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> Arogya-Connect
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn btn-primary" id="loginBtn">Login / Signup</button>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero consultation-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Expert Medical Advice, <br><span>Anytime, Anywhere.</span></h1>
+                    <p>Connect with top specialists via video call or book an in-person visit. Your health is our
+                        priority.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Browse by Specialty</h2>
+                    <p>Find the right doctor for your specific health needs.</p>
+                </div>
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h4>Cardiology</h4>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h4>Dermatology</h4>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-baby"></i>
+                        <h4>Pediatrics</h4>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>Neurology</h4>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-tooth"></i>
+                        <h4>Dentistry</h4>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <h4>Ophthalmology</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="doctors-list">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Top Rated Doctors</h2>
+                    <p>Book an appointment with our most experienced specialists.</p>
+                </div>
+                <div class="doctors-grid">
+                    <!-- Doctor 1 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg"
+                                alt="Dr. Sarah Johnson">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <span class="specialty">Cardiologist</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 4.9 (120 reviews)
+                            </div>
+                            <p class="experience">12 Years Experience</p>
+                            <button class="btn btn-outline" onclick="scrollToBooking('Dr. Sarah Johnson')">Book
+                                Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg"
+                                alt="Dr. Michael Chen">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <span class="specialty">Dermatologist</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 4.8 (95 reviews)
+                            </div>
+                            <p class="experience">8 Years Experience</p>
+                            <button class="btn btn-outline" onclick="scrollToBooking('Dr. Michael Chen')">Book
+                                Appointment</button>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 3 -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://img.freepik.com/free-photo/doctor-offering-medical-advice_23-2147796535.jpg"
+                                alt="Dr. Emily Davis">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Emily Davis</h3>
+                            <span class="specialty">Pediatrician</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i> 5.0 (150 reviews)
+                            </div>
+                            <p class="experience">15 Years Experience</p>
+                            <button class="btn btn-outline" onclick="scrollToBooking('Dr. Emily Davis')">Book
+                                Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking-form-section" class="booking-section">
+            <div class="container">
+                <div class="booking-container">
+                    <div class="booking-form-wrapper" style="flex: 1; max-width: 600px; margin: 0 auto;">
+                        <h2 style="text-align: center;">Book an Appointment</h2>
+                        <form class="booking-form">
+                            <div class="form-group">
+                                <label for="patient-name">Patient Name</label>
+                                <input type="text" id="patient-name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor-select">Select Doctor</label>
+                                <select id="doctor-select">
+                                    <option value="">Choose a Doctor</option>
+                                    <option value="Dr. Sarah Johnson">Dr. Sarah Johnson (Cardiologist)</option>
+                                    <option value="Dr. Michael Chen">Dr. Michael Chen (Dermatologist)</option>
+                                    <option value="Dr. Emily Davis">Dr. Emily Davis (Pediatrician)</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-date">Preferred Date</label>
+                                <input type="date" id="appointment-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointment-time">Preferred Time</label>
+                                <select id="appointment-time">
+                                    <option value="morning">Morning (9AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (1PM - 5PM)</option>
+                                    <option value="evening">Evening (6PM - 9PM)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Arogya-Connect</h3>
+                <p>Bridging the gap between you and quality healthcare.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> support@arogyaconnect.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9153447899</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Arogya-Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToBooking(doctorName) {
+            const select = document.getElementById('doctor-select');
+            select.value = doctorName;
+            document.getElementById('booking-form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
