@@ -48,7 +48,7 @@ ul {
     padding: 0 20px;
 }
 
-/* Header */
+
 .header {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -244,7 +244,7 @@ ul {
     animation: morph 8s ease-in-out infinite;
 }
 
-/* Services Section */
+
 .services {
     padding: 100px 0;
     background-color: var(--white);
@@ -337,7 +337,7 @@ ul {
     gap: 0.8rem;
 }
 
-/* Footer */
+
 .footer {
     background-color: #f8f9fa;
     padding: 80px 0 20px;
@@ -413,7 +413,7 @@ ul {
     font-size: 0.9rem;
 }
 
-/* Animations */
+
 @keyframes slideInLeft {
     from {
         transform: translateX(-50px);
@@ -564,7 +564,7 @@ ul {
     }
 }
 
-/* Login/Signup Page Styles */
+
 .login-container {
     position: relative;
     width: 100%;
@@ -762,7 +762,7 @@ form.sign-in-form {
     transform: translateX(800px);
 }
 
-/* Animation */
+
 
 .login-container.sign-up-mode::before {
     transform: translate(100%, -50%);
@@ -961,7 +961,7 @@ form.sign-in-form {
     }
 }
 
-/* Insurance Page Styles */
+
 .page-hero {
     padding: 150px 0 80px;
     background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
@@ -1109,7 +1109,7 @@ form.sign-in-form {
     margin-top: 1rem;
 }
 
-/* Booking Form Section */
+
 .booking-section {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -1196,7 +1196,7 @@ form.sign-in-form {
     }
 }
 
-/* Consultation Page Styles */
+
 .consultation-hero {
     background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
 }
